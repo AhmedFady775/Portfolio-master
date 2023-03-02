@@ -5,6 +5,7 @@ import { FaReact } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import { useState } from "react";
 import "./navbar.css";
+import { Helmet } from "react-helmet";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -37,6 +38,9 @@ function Navbar() {
     <header className="header" id="navbar">
       <nav className="nav">
         <FaReact size={40} color="#9146ff" />
+        <Helmet>
+          <body className={open ? "overflow-y-hidden" : " "} />
+        </Helmet>
         <ul className="nav__list">
           <li>
             <Link to="#intro" smooth>
