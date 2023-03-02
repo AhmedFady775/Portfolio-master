@@ -2,10 +2,18 @@ import React from "react";
 import Header from "../header";
 import HERO from "../../assets/Hero.jpg";
 import "./aboutMe.css";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 function AboutMe() {
+  AOS.init();
   return (
-    <div className="aboutme__cont" id="aboutme">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      className="aboutme__cont"
+      id="aboutme"
+    >
       <Header title={"About me"} />
       <div className="descrp__pic__cont">
         <div className="flex flex-col space-y-6">

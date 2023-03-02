@@ -1,16 +1,24 @@
 import React from "react";
 import Header from "./header";
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 function Contacts() {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  AOS.init();
 
   const handleOpen = () => {
     setOpen(!open);
   };
   return (
-    <div className="contacts__cont" id="contacts">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      className="contacts__cont"
+      id="contacts"
+    >
       <Header title="Get in touch" />
       <p className="text-center mb-8 md:w-[50%]">
         I’m currently looking for any new opportunities, my inbox is always

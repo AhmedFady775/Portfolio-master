@@ -1,13 +1,22 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 function Intro() {
+  AOS.init();
   return (
     <section className="intro__cont" id="intro">
-      <p className="intro">Hello, my name is</p>
-      <p className="intro-name">Ahmed Fady.</p>
-      <p className="intro-job">I'am a Front-end Developer & UI/UX Designer.</p>
-      <p className="intro-desc">
+      <p data-aos="fade-right" data-aos-duration="1500" className="intro">
+        Hello, my name is
+      </p>
+      <p data-aos="fade-right" data-aos-duration="1500" className="intro-name">
+        Ahmed Fady.
+      </p>
+      <p data-aos="fade-right" data-aos-duration="1500" className="intro-job">
+        I'am a Front-end Developer & UI/UX Designer.
+      </p>
+      <p data-aos="fade-up" data-aos-duration="2000" className="intro-desc">
         I'm a computer engineer who build and design websites. Currently, I'm a
         student at The British universty in Egypt and a freelancer.
       </p>

@@ -1,11 +1,14 @@
 import React from "react";
 import { TbBrandGithub } from "react-icons/tb";
 import { IoMdOpen } from "react-icons/io";
-import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 function Project(props) {
+  AOS.init();
+
   return (
-    <div className="project__cont">
+    <div data-aos="fade-up" data-aos-duration="2000" className="project__cont">
       <div className="project__desc">
         <div>
           <p className="font-bold text-[#9146ff]">Featured Project</p>
