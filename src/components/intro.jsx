@@ -20,7 +20,7 @@ function Intro() {
         I'm a computer engineer who build and design websites. Currently, I'm a
         student at The British universty in Egypt and a freelancer.
       </p>
-      <Link to="#contacts" smooth>
+      <Link data-aos="fade-up" data-aos-duration="2000" to="#contacts" smooth>
         <button className="flex mt-10 px-6 py-2 border border-violet-400 rounded text-violet-400 hover:bg-violet-800/30 hover:transition">
           Contact me
         </button>
