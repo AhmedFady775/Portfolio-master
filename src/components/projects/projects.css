@@ -39,3 +39,9 @@
   height: 100%;
   width: 100%;
 }
+
+@media (min-width: 1080px) {
+  .projects__section__cont {
+    padding: 100px 0px;
+  }
+}
