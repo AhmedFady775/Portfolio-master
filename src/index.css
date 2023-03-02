@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: var(--sm-color-background-base);
+  color: white;
+}
+
+:root {
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #64ffda;
+  --green-tint: rgba(100, 255, 218, 0.1);
+  --pink: #f57dff;
+  --blue: #57cbff;
+  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+  --border-radius: 4px;
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+  --tab-height: 42px;
+  --tab-width: 120px;
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --hamburger-width: 30px;
+  --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+  --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+  --ham-after: bottom 0.1s ease-in 0.25s,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ham-after-active: bottom 0.1s ease-out,
+    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  --sm-color-background-body: #9146ff;
+  --sm-color-background-base: #170a2f;
+  --sm-color-background-alt: #211a2c;
+  --sm-color-background-alt-2: #382f48;
+}
+
+.main__cont {
+  padding: 0px 25px;
+}
+
+.intro {
+  margin: 0px 0px 20px 0px;
+  font-size: clamp(var(--fz-md), 5vw, var(--fz-lg));
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--sm-color-background-body);
+}
+
+.intro__cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  height: 100vh;
+  margin: 0px auto;
+  max-width: 1000px;
+}
+
+.aboutme__cont {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 900px;
+}
+
+.intro-name {
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--sm-color-background-body);
+}
+
+.intro-job {
+  margin-top: 5px;
+  line-height: 1.2;
+  font-size: clamp(30px, 8vw, 60px);
+  font-weight: 700;
+}
+
+.intro-desc {
+  margin: 20px 0px 0px;
+  color: var(--slate);
+  font-family: var(--font-sans);
+  max-width: 640px;
+}
+
+.inputCont {
+  @apply flex flex-col w-full;
+}
+
+.inputlabel {
+  @apply font-semibold mb-2;
+}
+
+.input {
+  @apply rounded py-2 px-5 mb-4 outline-none;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: var(--sm-color-background-body);
+}
+
+.input__textarea {
+  @apply rounded py-2 px-5 mb-4 outline-none;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: var(--sm-color-background-body);
+  min-height: 150px;
+  resize: none;
+}
+
+.contacts__cont {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0px;
+  align-items: center;
+}
+@media (min-width: 1080px) {
+  .main__cont {
+    padding: 0px 150px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}

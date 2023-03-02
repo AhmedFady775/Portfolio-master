@@ -1,0 +1,41 @@
+.projects__section__cont {
+  margin: 0px auto;
+  padding: 60px 0px;
+  max-width: 1000px;
+}
+
+.projects__cont {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project__cont {
+  display: flex;
+  position: relative;
+  box-shadow: 10px 10px 30px -10px #10021b;
+  height: 400px;
+}
+
+.img__cont {
+  border-radius: 4px;
+  opacity: 0.35;
+  border: 2px solid var(--sm-color-background-body);
+  background-color: var(--sm-color-background-body);
+}
+
+.img__cont img {
+  mix-blend-mode: multiply;
+  filter: grayscale(100%) contrast(1) brightness(50%);
+}
+
+.project__desc {
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  position: absolute;
+  padding: 25px;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
