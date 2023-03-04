@@ -39,7 +39,7 @@ function Navbar() {
       <nav className="nav">
         <FaReact size={40} color="#9146ff" />
         <Helmet>
-          <body className={open ? "overflow-y-hidden" : " "} />
+          <body className={open ? "overflow-hidden" : " "} />
         </Helmet>
         <ul className="nav__list">
           <li>

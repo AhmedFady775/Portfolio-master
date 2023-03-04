@@ -13,20 +13,23 @@ function Contacts() {
     setOpen(!open);
   };
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-duration="2000"
-      className="contacts__cont"
-      id="contacts"
-    >
+    <div className="contacts__cont" id="contacts">
       <Header title="Get in touch" />
-      <p className="text-center mb-8 md:w-[50%]">
+      <p
+        className="text-center mb-8 md:w-[50%]"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         I’m currently looking for any new opportunities, my inbox is always
         open. Whether you have a question or just want to say hi, I’ll try my
         best to reach you asap!
       </p>
       {open ? (
-        <form className="w-full md:w-[50%]">
+        <form
+          className="w-full md:w-[50%]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-col">
             <label className="inputlabel">Name</label>
             <div className="inputCont">
@@ -93,7 +96,11 @@ function Contacts() {
         // >
         //   E-mail Me!!
         // </button>
-        <form className="w-full md:w-[50%]">
+        <form
+          className="w-full md:w-[50%]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-col">
             <label className="inputlabel">Name</label>
             <div className="inputCont">

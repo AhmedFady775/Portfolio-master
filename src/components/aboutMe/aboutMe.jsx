@@ -8,14 +8,13 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 function AboutMe() {
   AOS.init();
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-duration="2000"
-      className="aboutme__cont"
-      id="aboutme"
-    >
+    <div className="aboutme__cont" id="aboutme">
       <Header title={"About me"} />
-      <div className="descrp__pic__cont">
+      <div
+        className="descrp__pic__cont"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="flex flex-col space-y-6">
           <p className="aboutme-desc">
             Hello! My name is Ahmed and I enjoy creating eye-relieving websites

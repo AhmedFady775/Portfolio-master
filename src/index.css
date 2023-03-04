@@ -7,6 +7,26 @@ body {
   color: white;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8892b063;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8892b0;
+}
+
 :root {
   --dark-navy: #020c1b;
   --navy: #0a192f;
@@ -135,9 +155,19 @@ body {
   padding: 60px 0px;
   align-items: center;
 }
+
+.animClass {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
 @media (min-width: 1080px) {
   .main__cont {
     padding: 0px 150px;
+  }
+  .aboutme__cont {
+    padding: 200px 0;
   }
 }
 

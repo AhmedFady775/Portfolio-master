@@ -1,8 +1,14 @@
 import React from "react";
+import AOS from "aos";
 
 function Header(props) {
+  AOS.init();
   return (
-    <div className="flex flex-row items-center relative mb-10">
+    <div
+      className="flex flex-row items-center relative mb-10"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+    >
       {/* <div className="font-bold text-5xl lg:text-9xl opacity-5 absolute w-full flex">
         {props.title.toUpperCase()}
       </div> */}
