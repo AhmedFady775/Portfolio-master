@@ -24,7 +24,7 @@ function Intro() {
         and a <span className="text-[#9146ff]"> freelancer</span>.
       </p>
       <Link data-aos="fade-up" data-aos-duration="1500" to="#contacts" smooth>
-        <button className="flex mt-10 px-6 py-2 border border-violet-400 rounded text-violet-400 hover:bg-violet-800/30 hover:transition">
+        <button className="flex mt-10 px-6 py-2 border border-[#9146ff] rounded text-[#9146ff] hover:bg-[#9046ff1f] __hover">
           Contact me
         </button>
       </Link>
@@ -35,9 +35,9 @@ function Intro() {
         data-aos-duration="1500"
         smooth
       >
-        <div className="go__down border-2 rounded-2xl h-12 items-end border-[#9146ff]">
+        <div className="go__down border-2 rounded-2xl h-12 items-end border-[#9146ff] bg-[#9046ff1f] hover:bg-transparent  __hover">
           <BsArrowDownShort
-            className="animate-bounce"
+            className="animate-bounce "
             size={35}
             color="#9146ff"
           />

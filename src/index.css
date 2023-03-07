@@ -164,7 +164,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
-  font-size: var(--fz-sm);
+  font-size: var(--fz-md);
 }
 
 .email-link:hover {
