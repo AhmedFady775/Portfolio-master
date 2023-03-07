@@ -53,29 +53,25 @@ function Navbar() {
             </Link>
           </li> */}
           <li data-aos="fade-down" data-aos-duration="1000">
-            <Link to="#aboutme" smooth>
+            <Link className="__hover" to="#aboutme" smooth>
               ABOUT
             </Link>
           </li>
           <li data-aos="fade-down" data-aos-duration="1200">
-            <Link to="#projects" smooth>
+            <Link className="__hover" to="#projects" smooth>
               PROJECTS
             </Link>
           </li>
           <li data-aos="fade-down" data-aos-duration="1400">
-            <Link to="#contacts" smooth>
+            <Link className="__hover" to="#contacts" smooth>
               CONTACTS
             </Link>
           </li>
-          <a
-            data-aos="fade-down"
-            data-aos-duration="1600"
-            href="resume.pdf"
-            className="CV__button"
-            target="_blank"
-          >
-            Resume
-          </a>
+          <button data-aos="fade-down" data-aos-duration="1600">
+            <a href="resume.pdf" className="CV__button __hover" target="_blank">
+              Resume
+            </a>
+          </button>
         </ul>
         <HiMenuAlt3
           className="sidenav__button"

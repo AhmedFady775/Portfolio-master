@@ -30,14 +30,12 @@ function Contacts() {
         open. Whether you have a question or just want to say hi, I will try my
         best to reach you <span className="text-[#9146ff]">Asap!</span>
       </p>
-      <a
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        className="email-link"
-        href="mailto:fadiahmed298@gmail.com"
-      >
-        E-mail Me
-      </a>{" "}
+      <button className="mt-14" data-aos="fade-up" data-aos-duration="1200">
+        <a className="email-link" href="mailto:fadiahmed298@gmail.com">
+          E-mail Me
+        </a>
+      </button>
+
       {/* {open ? (
         <form
           className="w-full md:w-[50%]"

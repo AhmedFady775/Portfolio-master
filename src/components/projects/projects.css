@@ -12,14 +12,13 @@
 
 .project__cont {
   display: flex;
-  position: relative;
   box-shadow: 10px 10px 30px -10px #10021b;
   height: 400px;
   transition: var(--transition);
 }
 
 .project__cont:hover {
-  box-shadow: 0 20px 30px -15px var(--navy-shadow);
+  translate: 0 -10px;
 }
 
 .img__cont {

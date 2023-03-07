@@ -8,34 +8,36 @@ function Project(props) {
   AOS.init();
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1000" className="project__cont">
-      <div className="project__desc">
-        <div>
-          <p className="font-bold text-[#9146ff]">Featured Project</p>
-          <p className="text-2xl font-bold">{props.name}</p>
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <div className="project__cont">
+        <div className="project__desc">
+          <div>
+            <p className="font-bold text-[#9146ff]">Featured Project</p>
+            <p className="text-2xl font-bold">{props.name}</p>
+          </div>
+          <p>{props.desc}</p>
+          <div className="flex flex-row gap-4 font-mono">
+            {props.made.map((item) => (
+              <div>{item}</div>
+            ))}
+          </div>
+          <div>
+            <span className="flex flex-row space-x-3">
+              <a href={props.github} target="_blank">
+                <TbBrandGithub size={25} />
+              </a>
+              <a href={props.live} target="_blank">
+                <IoMdOpen size={25} />
+              </a>
+            </span>
+          </div>
         </div>
-        <p>{props.desc}</p>
-        <div className="flex flex-row gap-4 font-mono">
-          {props.made.map((item) => (
-            <div>{item}</div>
-          ))}
+        <div className="img__cont">
+          <img
+            className="w-full h-full object-cover rounded-md"
+            src={props.src}
+          />
         </div>
-        <div>
-          <span className="flex flex-row space-x-3">
-            <a href={props.github} target="_blank">
-              <TbBrandGithub size={25} />
-            </a>
-            <a href={props.live} target="_blank">
-              <IoMdOpen size={25} />
-            </a>
-          </span>
-        </div>
-      </div>
-      <div className="img__cont">
-        <img
-          className="w-full h-full object-cover rounded-md"
-          src={props.src}
-        />
       </div>
     </div>
   );

@@ -31,7 +31,7 @@
   font-family: var(--font-mono);
 }
 
-.nav__list li {
+.__hover {
   transition: var(--transition);
 }
 
