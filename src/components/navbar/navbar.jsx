@@ -37,7 +37,12 @@ function Navbar() {
   return (
     <header className="header" id="navbar">
       <nav className="nav">
-        <FaReact size={40} color="#9146ff" />
+        <FaReact
+          size={40}
+          color="#9146ff"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        />
         <Helmet>
           <body className={open ? "overflow-hidden" : " "} />
         </Helmet>
@@ -47,22 +52,28 @@ function Navbar() {
               A GLANCE
             </Link>
           </li> */}
-          <li>
+          <li data-aos="fade-down" data-aos-duration="1000">
             <Link to="#aboutme" smooth>
               ABOUT
             </Link>
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-duration="1200">
             <Link to="#projects" smooth>
               PROJECTS
             </Link>
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-duration="1400">
             <Link to="#contacts" smooth>
               CONTACTS
             </Link>
           </li>
-          <a href="resume.pdf" className="CV__button" target="_blank">
+          <a
+            data-aos="fade-down"
+            data-aos-duration="1600"
+            href="resume.pdf"
+            className="CV__button"
+            target="_blank"
+          >
             Resume
           </a>
         </ul>
@@ -71,6 +82,8 @@ function Navbar() {
           onClick={handleNav}
           size={40}
           color="#9146ff"
+          data-aos="fade-left"
+          data-aos-duration="1000"
         />
       </nav>
 
