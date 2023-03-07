@@ -1,7 +1,6 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { FaReact } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import { useState } from "react";
 import "./navbar.css";
