@@ -37,7 +37,11 @@ function Navbar() {
     <header className="header" id="navbar">
       <nav className="nav">
         <Link to="#intro" smooth>
-          <img src="https://img.icons8.com/external-others-inmotus-design/35/9146ff/external-A-alphabet-others-inmotus-design-12.png" />
+          <img
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            src="https://img.icons8.com/external-others-inmotus-design/35/9146ff/external-A-alphabet-others-inmotus-design-12.png"
+          />
         </Link>
         {/* <FaReact
           size={40}
