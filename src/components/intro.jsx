@@ -35,7 +35,7 @@ function Intro() {
         data-aos-duration="1500"
         smooth
       >
-        <div className="border-2 flex rounded-2xl h-12 items-end border-[#9146ff]">
+        <div className="go__down border-2 rounded-2xl h-12 items-end border-[#9146ff]">
           <BsArrowDownShort
             className="animate-bounce"
             size={35}
