@@ -15,7 +15,7 @@ function Intro() {
         Ahmed Fady.
       </p>
       <p data-aos="fade-down" data-aos-duration="1000" className="intro-job">
-        I am a Front-end Developer & UI/UX Designer.
+        I am a Front-end Web Developer & UI/UX Designer.
       </p>
       <p data-aos="fade-up" data-aos-duration="1000" className="intro-desc">
         I am a <span className="text-[#9146ff]"> computer engineer</span> who
