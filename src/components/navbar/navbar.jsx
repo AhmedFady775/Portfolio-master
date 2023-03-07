@@ -37,12 +37,15 @@ function Navbar() {
   return (
     <header className="header" id="navbar">
       <nav className="nav">
-        <FaReact
+        <Link to="#intro" smooth>
+          <img src="https://img.icons8.com/external-others-inmotus-design/35/9146ff/external-A-alphabet-others-inmotus-design-12.png" />
+        </Link>
+        {/* <FaReact
           size={40}
           color="#9146ff"
           data-aos="fade-right"
           data-aos-duration="1000"
-        />
+        /> */}
         <Helmet>
           <body className={open ? "overflow-hidden" : " "} />
         </Helmet>
