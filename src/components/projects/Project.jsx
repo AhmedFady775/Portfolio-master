@@ -25,11 +25,19 @@ function Project(props) {
             <div>
               <span className="flex flex-row space-x-3">
                 {props.github ? (
-                  <a href={props.github} target="_blank">
+                  <a
+                    className="__hover hover:text-[#9146ff]"
+                    href={props.github}
+                    target="_blank"
+                  >
                     <TbBrandGithub size={25} />
                   </a>
                 ) : null}
-                <a href={props.live} target="_blank">
+                <a
+                  className="__hover hover:text-[#9146ff]"
+                  href={props.live}
+                  target="_blank"
+                >
                   <IoMdOpen size={25} />
                 </a>
               </span>
