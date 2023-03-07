@@ -19,7 +19,7 @@ function Intro() {
       </p>
       <p data-aos="fade-up" data-aos-duration="1000" className="intro-desc">
         I am a <span className="text-[#9146ff]"> computer engineer</span> who
-        design and build websites. Currently, I'm a student at{" "}
+        designs and builds websites. Currently, I'm a student at{" "}
         <span className="text-[#9146ff]"> The British Universty in Egypt</span>{" "}
         and a <span className="text-[#9146ff]"> freelancer</span>.
       </p>
