@@ -96,12 +96,6 @@ body {
   max-width: 1000px;
 }
 
-.aboutme__cont {
-  margin: 0px auto;
-  padding: 100px 0px;
-  max-width: 900px;
-}
-
 .intro-name {
   font-size: clamp(40px, 8vw, 80px);
   font-weight: 700;
@@ -118,7 +112,7 @@ body {
 
 .intro-desc {
   margin: 20px 0px 0px;
-  color: var(--slate);
+  color: var(--light-slate);
   font-family: var(--font-sans);
   max-width: 640px;
 }
@@ -152,8 +146,30 @@ body {
 .contacts__cont {
   display: flex;
   flex-direction: column;
-  padding: 60px 0px;
+  max-width: 600px;
+  margin: 0px auto 100px;
+  padding: 100px 0px;
   align-items: center;
+  text-align: center;
+}
+
+.email-link {
+  color: #9146ff;
+  background-color: transparent;
+  border: 1px solid #9146ff;
+  border-radius: var(--border-radius);
+  padding: 1rem 1.25rem;
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 60px;
+  font-size: var(--fz-sm);
+}
+
+.email-link:hover {
+  background-color: #9046ff1f;
 }
 
 .animClass {
@@ -166,15 +182,12 @@ body {
   .main__cont {
     padding: 0px 150px;
   }
-  .aboutme__cont {
-    padding: 200px 0;
-  }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   to {
     opacity: 1;

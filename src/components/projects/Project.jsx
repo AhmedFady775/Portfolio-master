@@ -8,7 +8,7 @@ function Project(props) {
   AOS.init();
 
   return (
-    <div data-aos="fade-up" data-aos-duration="2000" className="project__cont">
+    <div data-aos="fade-up" data-aos-duration="1000" className="project__cont">
       <div className="project__desc">
         <div>
           <p className="font-bold text-[#9146ff]">Featured Project</p>

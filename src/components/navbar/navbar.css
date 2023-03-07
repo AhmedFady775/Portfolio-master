@@ -31,6 +31,10 @@
   font-family: var(--font-mono);
 }
 
+.nav__list li {
+  transition: var(--transition);
+}
+
 .nav__list li:hover {
   color: #9146ff;
 }
@@ -56,7 +60,7 @@
 
 @media (min-width: 1080px) {
   .header {
-    padding: 0px 40px;
+    padding: 0px 50px;
   }
   .sidenav__button {
     display: none;

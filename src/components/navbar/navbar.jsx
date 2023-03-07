@@ -42,24 +42,24 @@ function Navbar() {
           <body className={open ? "overflow-hidden" : " "} />
         </Helmet>
         <ul className="nav__list">
-          <li>
+          {/* <li>
             <Link to="#intro" smooth>
-              Quick Glance
+              A GLANCE
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="#aboutme" smooth>
-              About me
+              ABOUT
             </Link>
           </li>
           <li>
             <Link to="#projects" smooth>
-              projects
+              PROJECTS
             </Link>
           </li>
           <li>
             <Link to="#contacts" smooth>
-              Contact
+              CONTACTS
             </Link>
           </li>
           <a href="resume.pdf" className="CV__button" target="_blank">
@@ -101,11 +101,11 @@ function Navbar() {
           className="flex flex-col space-y-10 h-screen w-full justify-center items-center text-md font bg-[#170a2f]"
           onClick={handleNav}
         >
-          <li>
+          {/* <li>
             <Link to="#intro" smooth>
               A GLANCE
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="#aboutme" smooth>
               ABOUT

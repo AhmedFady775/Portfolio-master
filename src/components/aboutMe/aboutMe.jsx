@@ -17,25 +17,36 @@ function AboutMe() {
       >
         <div className="flex flex-col space-y-6">
           <p className="aboutme-desc">
-            Hello! My name is Ahmed and I enjoy creating eye-relieving websites
-            on the internet. i have started web developing in 2021 at my second
-            year in computer engineering while working on a data base project
-            which made me interact with frontend and learned HTML & CSS for the
-            first time!
+            Hello! My name is Ahmed. I enjoy creating responsive and
+            eye-relieving websites on the Internet. I started
+            <span className="text-[#9146ff]"> web development</span> circa 2021
+            in my second year in
+            <span className="text-[#9146ff]"> computer engineering</span>. I was
+            working on a database project that made me interact with{" "}
+            <span className="text-[#9146ff]"> HTML</span> &{" "}
+            <span className="text-[#9146ff]"> CSS</span> for the first time!
           </p>
           <p className="aboutme-desc">
-            Today, I have gained a lot of knowledge in web industry and started
-            working with React as a main library. Also, I had the privilege of
-            making websites for my agents and friends beside my side projects.
+            Today, I have gained much knowledge in the web industry and started
+            to pursue a path in{" "}
+            <span className="text-[#9146ff]"> Frontend web development</span>{" "}
+            using <span className="text-[#9146ff]"> React</span> as my main
+            library. Also, I had the privilege of learning and using backend
+            frameworks such as{" "}
+            <span className="text-[#9146ff]"> Express.js</span> to make{" "}
+            <span className="text-[#9146ff]"> fully compatible websites</span>{" "}
+            for my agents and friends besides my side projects.
           </p>
           <p className="aboutme-desc">
             Here are a few technologies I have been working with recently:
             <ul className="skills__list">
               <li>React</li>
-              <li>Node.js</li>
-              <li>Tailwind</li>
+              <li>Next.js</li>
               <li>JavaScript (ES6+)</li>
-              <li>Mongo</li>
+              <li>Tailwind</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Mongo db</li>
               <li>Illustrator</li>
               <li>Photoshop</li>
             </ul>

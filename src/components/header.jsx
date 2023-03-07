@@ -6,7 +6,7 @@ function Header(props) {
   return (
     <div
       className="flex flex-row items-center relative mb-10"
-      data-aos="fade-right"
+      data-aos="fade-down"
       data-aos-duration="1000"
     >
       {/* <div className="font-bold text-5xl lg:text-9xl opacity-5 absolute w-full flex">

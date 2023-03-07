@@ -14,17 +14,31 @@ function Contacts() {
   };
   return (
     <div className="contacts__cont" id="contacts">
-      <Header title="Get in touch" />
       <p
-        className="text-center mb-8 md:w-[50%]"
+        data-aos="fade-down"
+        data-aos-duration="700"
+        className="mb-10 text-3xl font-bold"
+      >
+        GET IN TOUCH
+      </p>
+      <p
+        className="text-lg text-[#a8b2d1]"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        I’m currently looking for any new opportunities, my inbox is always
-        open. Whether you have a question or just want to say hi, I’ll try my
-        best to reach you asap!
+        I am currently looking for any new opportunities, my inbox is always
+        open. Whether you have a question or just want to say hi, I will try my
+        best to reach you <span className="text-[#9146ff]">Asap!</span>
       </p>
-      {open ? (
+      <a
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="email-link"
+        href="mailto:fadiahmed298@gmail.com"
+      >
+        E-mail Me
+      </a>{" "}
+      {/* {open ? (
         <form
           className="w-full md:w-[50%]"
           data-aos="fade-up"
@@ -160,7 +174,7 @@ function Contacts() {
             )}
           </div>
         </form>
-      )}
+      )} */}
     </div>
   );
 }

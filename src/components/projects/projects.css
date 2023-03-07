@@ -15,6 +15,11 @@
   position: relative;
   box-shadow: 10px 10px 30px -10px #10021b;
   height: 400px;
+  transition: var(--transition);
+}
+
+.project__cont:hover {
+  box-shadow: 0 20px 30px -15px var(--navy-shadow);
 }
 
 .img__cont {
@@ -43,5 +48,11 @@
 @media (min-width: 1080px) {
   .projects__section__cont {
     padding: 100px 0px;
+  }
+
+  .projects__cont {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
   }
 }
