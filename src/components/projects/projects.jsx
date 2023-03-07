@@ -4,28 +4,33 @@ import HERO from "../../assets/My_project.png";
 import "./projects.css";
 import SHOP from "../../assets/Shop.png";
 import Project from "./Project";
+import ASUFE from "../../assets/ASUFE_CPC.png";
+import FREEZE from "../../assets/Freeze.png";
 
 function Projects() {
   const projects = [
     {
-      name: "E-commerce",
+      name: "E-commerce Shop",
       src: SHOP,
-      desc: "hello",
-      made: ["React", "Node.js"],
+      desc: "an online shop for selling any resources. deployed using Netlify and Heroku.",
+      made: ["React", "Node.js", "Express.js", "Netlify", "Mongo db"],
       github: "https://github.com/AhmedFady775/ECOMM-Frontend",
       live: "https://tiny-brigadeiros-bbe0fd.netlify.app/",
     },
     {
       name: "Universty project",
-      src: SHOP,
-      desc: "hello",
-      made: ["React", "Node.js"],
+      src: ASUFE,
+      desc: "competitive programming management web app.",
+      made: ["React", "Flusk", "SQL"],
+      live: "https://asufe-cpc.me/home",
     },
     {
-      name: "Universty project",
-      src: SHOP,
-      desc: "hello",
-      made: ["React", "Node.js"],
+      name: "A website clone",
+      src: FREEZE,
+      desc: "an online shop clone using next.js and deployed by vercel.",
+      made: ["Next.js", "vercel"],
+      github: "https://github.com/AhmedFady775/freeze/tree/main",
+      live: "https://freeze-1tgu.vercel.app/",
     },
   ];
 

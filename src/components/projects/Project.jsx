@@ -15,17 +15,19 @@ function Project(props) {
             <p className="font-bold text-[#9146ff]">Featured Project</p>
             <p className="text-2xl font-bold">{props.name}</p>
           </div>
-          <p>{props.desc}</p>
-          <div className="flex flex-row gap-4 font-mono">
+          <p className="h-10">{props.desc}</p>
+          <div className="flex flex-row font-mono flex-wrap">
             {props.made.map((item) => (
-              <div>{item}</div>
+              <div className="mr-4">{item}</div>
             ))}
           </div>
           <div>
             <span className="flex flex-row space-x-3">
-              <a href={props.github} target="_blank">
-                <TbBrandGithub size={25} />
-              </a>
+              {props.github ? (
+                <a href={props.github} target="_blank">
+                  <TbBrandGithub size={25} />
+                </a>
+              ) : null}
               <a href={props.live} target="_blank">
                 <IoMdOpen size={25} />
               </a>
