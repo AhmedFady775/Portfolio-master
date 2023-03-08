@@ -114,7 +114,7 @@ function Navbar() {
         }
       >
         <ul
-          className="flex flex-col space-y-10 h-screen w-full justify-center items-center text-md font bg-[#170a2f]"
+          className="flex flex-col space-y-10 h-screen w-full justify-center items-center text-md font bg-[#1a0a2f]"
           onClick={handleNav}
         >
           {/* <li>
