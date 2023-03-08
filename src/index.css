@@ -181,6 +181,15 @@ body {
   -webkit-perspective: 1000;
 }
 
+.icon__hover {
+  transition: var(--transition);
+}
+
+.icon__hover:hover {
+  translate: 0px -5px;
+  color: var(--sm-color-background-body);
+}
+
 @media (min-width: 1080px) {
   .main__cont {
     padding: 0px 150px;
