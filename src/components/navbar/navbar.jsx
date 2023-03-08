@@ -5,6 +5,7 @@ import { RiCloseFill } from "react-icons/ri";
 import { useState } from "react";
 import "./navbar.css";
 import { Helmet } from "react-helmet";
+import Resume from "../../assets/resume.pdf";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -74,7 +75,7 @@ function Navbar() {
             </Link>
           </li>
           <button data-aos="fade-down" data-aos-duration="1600">
-            <a href="resume.pdf" className="CV__button __hover" target="_blank">
+            <a href={Resume} className="CV__button __hover" target="_blank">
               Resume
             </a>
           </button>
