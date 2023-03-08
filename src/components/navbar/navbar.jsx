@@ -137,6 +137,11 @@ function Navbar() {
               CONTACTS
             </Link>
           </li>
+          <button data-aos="fade-down" data-aos-duration="1600">
+            <a href={Resume} className="CV__button __hover" target="_blank">
+              Resume
+            </a>
+          </button>
         </ul>
         <RiCloseFill
           className="absolute top-7 right-5"
