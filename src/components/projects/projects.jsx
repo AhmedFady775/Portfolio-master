@@ -6,6 +6,7 @@ import SHOP from "../../assets/Shop.png";
 import Project from "./Project";
 import ASUFE from "../../assets/ASUFE_CPC.png";
 import FREEZE from "../../assets/Freeze.png";
+import Project1 from "./Project1";
 
 function Projects() {
   const projects = [
@@ -39,7 +40,7 @@ function Projects() {
       <Header title="my Projects" />
       <section className="projects__cont">
         {projects.map((project) => (
-          <Project
+          <Project1
             name={project.name}
             src={project.src}
             desc={project.desc}

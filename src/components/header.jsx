@@ -1,8 +1,6 @@
 import React from "react";
-import AOS from "aos";
 
 function Header(props) {
-  AOS.init();
   return (
     <div
       className="flex flex-row items-center relative mb-10"

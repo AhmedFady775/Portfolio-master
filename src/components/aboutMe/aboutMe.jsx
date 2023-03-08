@@ -2,11 +2,10 @@ import React from "react";
 import Header from "../header";
 import HERO from "../../assets/Hero.jpg";
 import "./aboutMe.css";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+
+// You can also use <link> for styles
 
 function AboutMe() {
-  AOS.init();
   return (
     <div className="aboutme__cont" id="aboutme">
       <Header title={"About me"} />

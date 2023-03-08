@@ -8,15 +8,21 @@ function Project(props) {
     <div data-aos="fade-up" data-aos-duration="1000">
       <a href={props.live} target="_blank">
         <div className="project__cont">
+          <div className="img__cont">
+            <img
+              className="w-full h-full object-cover rounded-md"
+              src={props.src}
+            />
+          </div>
           <div className="project__desc">
             <div>
               <p className="font-bold text-[#9146ff]">Featured Project</p>
-              <p className="text-2xl font-bold">{props.name}</p>
+              <p className="text-2xl font-bold ">{props.name}</p>
             </div>
             <p className="h-10">{props.desc}</p>
             <div className="flex flex-row font-mono flex-wrap">
               {props.made.map((item) => (
-                <div className="mr-4">{item}</div>
+                <div className="mr-4 text-[#ccd6f6]">{item}</div>
               ))}
             </div>
             <div>
@@ -39,12 +45,6 @@ function Project(props) {
                 </a>
               </span>
             </div>
-          </div>
-          <div className="img__cont">
-            <img
-              className="w-full h-full object-cover rounded-md"
-              src={props.src}
-            />
           </div>
         </div>
       </a>

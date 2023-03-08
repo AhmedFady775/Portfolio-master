@@ -1,11 +1,10 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+
+// You can also use <link> for styles
 import { BsArrowDownShort } from "react-icons/bs";
 
 function Intro() {
-  AOS.init();
   return (
     <section className="intro__cont" id="intro">
       <p data-aos="fade-down" data-aos-duration="2000" className="intro">

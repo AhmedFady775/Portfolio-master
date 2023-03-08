@@ -1,13 +1,12 @@
 import React from "react";
 import Header from "./header";
 import { useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+
+// You can also use <link> for styles
 
 function Contacts() {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  AOS.init();
 
   const handleOpen = () => {
     setOpen(!open);
@@ -30,16 +29,16 @@ function Contacts() {
         open. Whether you have a question or just want to say hi, I will try my
         best to reach you <span className="text-[#9146ff]">Asap!</span>
       </p>
-      <a className="mt-14" href="mailto:fadiahmed298@gmail.com">
-        <button
-          className="email-link"
-          data-aos="fade-up"
-          data-aos-duration="1200"
+
+      <button className="mt-14" data-aos="fade-up" data-aos-duration="1200">
+        <a
+          href="mailto:fadiahmed298@gmail.com"
+          className="email-link __hover"
+          target="_blank"
         >
           E-mail Me
-        </button>
-      </a>
-
+        </a>
+      </button>
       {/* {open ? (
         <form
           className="w-full md:w-[50%]"

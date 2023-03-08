@@ -68,7 +68,7 @@ body {
   --ham-after-active: bottom 0.1s ease-out,
     transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   --sm-color-background-body: #9146ff;
-  --sm-color-background-base: #170a2f;
+  --sm-color-background-base: #1a0a2f;
   --sm-color-background-alt: #211a2c;
   --sm-color-background-alt-2: #382f48;
 }
