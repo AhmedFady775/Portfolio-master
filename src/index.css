@@ -133,6 +133,7 @@ body {
 }
 
 .email-link {
+  display: flex;
   color: #9146ff;
   background-color: transparent;
   border: 1px solid #9146ff;
