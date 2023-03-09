@@ -1,7 +1,5 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-
-// You can also use <link> for styles
 import { BsArrowDownShort } from "react-icons/bs";
 
 function Intro() {
