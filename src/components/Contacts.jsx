@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./header";
 import { useState } from "react";
 
 // You can also use <link> for styles
