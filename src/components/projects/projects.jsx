@@ -15,14 +15,14 @@ function Projects() {
       src: SHOP,
       desc: "an online shop for selling any resources. deployed using Netlify and Heroku.",
       made: ["React", "Node.js", "Express.js", "Netlify", "Mongo db"],
-      github: "https://github.com/AhmedFady775/ECOMM-Frontend",
+      github: "https://github.com/AhmedFady775/Ecomm-shop",
       live: "https://vv2ss.netlify.app/",
     },
     {
       name: "Universty project",
       src: ASUFE,
       desc: "competitive programming management web app.",
-      made: ["React", "Flusk", "SQL"],
+      made: ["React", "Flask", "SQL"],
       live: "https://asufe-cpc.me/home",
     },
     {
