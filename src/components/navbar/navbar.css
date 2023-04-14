@@ -7,7 +7,7 @@
   align-items: center;
   z-index: 100;
   padding: 0px 25px;
-  background-color: #1a0a2fe5;
+  background-color: var(--sm-color-background-base);
   backdrop-filter: blur(10px);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }

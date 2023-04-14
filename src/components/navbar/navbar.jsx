@@ -23,7 +23,8 @@ function Navbar() {
     } else {
       (document.getElementById("navbar").style.height = "70px"),
         (document.getElementById("navbar").style.boxShadow =
-          "0 10px 30px -10px #10021b");
+          "0 10px 30px -10px #10021b"),
+        (document.getElementById("navbar").style.backgroundColor = "#1a0a2ff6");
     }
 
     if (prevScrollpos > currentScrollPos) {
