@@ -1,6 +1,7 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { BsArrowDownShort } from "react-icons/bs";
+import Resume from "../assets/resume.pdf";
 
 function Intro() {
   return (
@@ -20,11 +21,25 @@ function Intro() {
         <span className="text-[#9146ff]"> The British Universty in Egypt</span>{" "}
         and a <span className="text-[#9146ff]"> freelancer</span>.
       </p>
-      <Link data-aos="fade-up" data-aos-duration="1500" to="#contacts" smooth>
-        <button className="flex mt-10 px-6 py-2 border border-[#9146ff] rounded text-[#9146ff] hover:bg-[#9046ff1f] __hover">
-          Contact me
-        </button>
-      </Link>
+      <div
+        className="flex flex-row gap-8"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <Link to="#contacts" smooth>
+          <button className="flex mt-10 px-6 py-2 border border-[#9146ff] rounded text-[#9146ff] hover:bg-[#9046ff1f] __hover">
+            Contact me
+          </button>
+        </Link>
+        <a
+          href={Resume}
+          target="_blank"
+          className="flex mt-10 px-6 py-2 border border-[#9146ff] rounded hover:text-[#9146ff] text-[var(--sm-color-background-base)] bg-[#9146ff] hover:bg-transparent font-semibold __hover"
+        >
+          Resume
+        </a>
+      </div>
+
       <Link
         className="relative mx-auto top-32"
         to="#aboutme"
