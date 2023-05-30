@@ -1,11 +1,9 @@
 import React from "react";
 import Header from "../header";
-import HERO from "../../assets/My_project.png";
 import "./projects.css";
 import SHOP from "../../assets/Shop.png";
-import Project from "./Project";
 import ASUFE from "../../assets/ASUFE_CPC.png";
-import FREEZE from "../../assets/Freeze.png";
+import ALLIVES from "../../assets/ALLIVES.png";
 import Project1 from "./Project1";
 
 function Projects() {
@@ -26,12 +24,11 @@ function Projects() {
       live: "https://asufe-cpc.me/home",
     },
     {
-      name: "A website clone",
-      src: FREEZE,
-      desc: "an online shop clone using next.js and deployed by vercel.",
+      name: "All'ives",
+      src: ALLIVES,
+      desc: "an online shop using next.js and deployed by vercel.",
       made: ["Next.js", "vercel"],
-      github: "https://github.com/AhmedFady775/freeze/tree/main",
-      live: "https://freeze-1tgu.vercel.app/",
+      live: "https://all-ives-next.vercel.app/",
     },
   ];
 
