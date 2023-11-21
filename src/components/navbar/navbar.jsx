@@ -5,7 +5,7 @@ import { RiCloseFill } from "react-icons/ri";
 import { useState } from "react";
 import "./navbar.css";
 import { Helmet } from "react-helmet";
-import Resume from "../../assets/resume.pdf";
+import Resume from "../../assets/cv.pdf";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,9 +13,9 @@ function Navbar() {
     setOpen(!open);
   };
 
-  var prevScrollpos = window.pageYOffset;
+  var prevScrollpos = window.scrollY;
   window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
+    var currentScrollPos = window.scrollY;
 
     if (currentScrollPos === 0) {
       (document.getElementById("navbar").style.height = "100px"),
@@ -42,24 +42,14 @@ function Navbar() {
           <img
             data-aos="fade-right"
             data-aos-duration="1000"
-            src="https://img.icons8.com/external-others-inmotus-design/35/9146ff/external-A-alphabet-others-inmotus-design-12.png"
+            src="https://img.icons8.com/ios-filled/35/9146ff/a-key.png"
           />
         </Link>
-        {/* <FaReact
-          size={40}
-          color="#9146ff"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        /> */}
+
         <Helmet>
           <body className={open ? "overflow-hidden" : " "} />
         </Helmet>
         <ul className="nav__list">
-          {/* <li>
-            <Link to="#intro" smooth>
-              A GLANCE
-            </Link>
-          </li> */}
           <li data-aos="fade-down" data-aos-duration="1000">
             <Link className="__hover" to="#aboutme" smooth>
               ABOUT
@@ -118,11 +108,6 @@ function Navbar() {
           className="flex flex-col space-y-10 h-screen w-full justify-center items-center text-md font bg-[#1a0a2f]"
           onClick={handleNav}
         >
-          {/* <li>
-            <Link to="#intro" smooth>
-              A GLANCE
-            </Link>
-          </li> */}
           <li>
             <Link to="#aboutme" smooth>
               ABOUT
