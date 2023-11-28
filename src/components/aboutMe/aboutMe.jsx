@@ -1,9 +1,6 @@
 import React from "react";
 import Header from "../header";
-import HERO from "../../assets/Hero.jpg";
 import "./aboutMe.css";
-
-// You can also use <link> for styles
 
 function AboutMe() {
   return (
@@ -57,7 +54,7 @@ function AboutMe() {
             hover on the image for some cool effects !!
           </p> */}
           <div className="wrapper">
-            <img src={HERO} />
+            <img src="./Hero.jpg" />
           </div>
         </div>
       </div>

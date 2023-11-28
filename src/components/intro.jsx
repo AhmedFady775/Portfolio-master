@@ -1,7 +1,6 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { BsArrowDownShort } from "react-icons/bs";
-import Resume from "../assets/resume.pdf";
 
 function Intro() {
   return (
@@ -32,7 +31,7 @@ function Intro() {
           </button>
         </Link>
         <a
-          href={Resume}
+          href="./CV.pdf"
           target="_blank"
           className="flex mt-10 px-6 py-2 border border-[#9146ff] rounded hover:text-[#9146ff] text-[var(--sm-color-background-base)] bg-[#9146ff] hover:bg-transparent font-semibold __hover"
         >
