@@ -18,7 +18,7 @@ function Projects() {
       desc: "an online shop for selling any resources. deployed using Netlify and Heroku.",
       made: ["React", "Node.js", "Express.js", "Netlify", "Mongo db"],
       github: "https://github.com/AhmedFady775/Ecomm-shop",
-      live: "https://vv2ss.netlify.app/",
+      live: "https://client-ecomm.vercel.app/",
     },
     {
       name: "SKYPOINT",
